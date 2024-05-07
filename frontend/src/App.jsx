@@ -31,12 +31,11 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path='/' element={<Signup/>}/>
         <Route path='/register' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/home' element={<Home />}/>
+        <Route path='/home' element={<Main />}/>
         {/* <Route path='/feedback' element={<Feedback />}/> */}
       </Routes>
     </BrowserRouter>

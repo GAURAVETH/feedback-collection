@@ -17,19 +17,15 @@ const NavLinks = [
   },
   {
     id: 3,
-    name: "Login",
+    name: "Admin Login",
     link: "/login",
   },
   {
     id: 4,
-    name: "Signup",
-    link: "/register",
+    name: "Logout",
+    link: "/login",
   },
-  {
-    id: 5,
-    name: "Admin Login",
-    link: "#",
-  },
+ 
 ];
 const Navbar = () => {
   const [showMenu, setShowMenu] = React.useState(false);

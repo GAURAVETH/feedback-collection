@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import DarkMode from "../DarkMode";
 
+
 function Signup() {
 
     const [name, setName] = useState()
@@ -24,7 +25,13 @@ function Signup() {
 
 
     return (
-        <div className="flex height flex-col justify-center px-6 py-12 lg:px-8">
+        <>
+        <div className=" flex gap-4 absolute right-10 top-5">
+            <h1>Dark Mode</h1>
+        <DarkMode />
+        </div>
+        
+        <div className="flex h-screen flex-col justify-center px-6 py-12 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                 <img className="mx-auto h-20 w-auto" src={Logo} alt="Logo" />
                 <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">Signup</h2>
@@ -86,6 +93,7 @@ function Signup() {
              <div className="h-[300px] w-[300px] bg-gradient-to-r from-primary to-secondary rounded-full absolute top-0 left-0 blur-3xl animated-wrapper"></div>
 
         </div>
+        </>
     );
 }
 
