@@ -6,9 +6,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Login/Login";
-import Main from "./Components/Main/Main";
-import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
+import FeedbackForms from "./Components/FeedbackForms/FeedbackForms";
 
 
 const App = () => {
@@ -31,13 +30,18 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <BrowserRouter>
+      <switch>
+        {/* <Navbar /> */}
       <Routes>
-        <Route path='/' element={<Signup/>}/>
+        <Route path='/' element={<Login />}/>
         <Route path='/register' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/home' element={<Main />}/>
+        <Route path='/home' element={<Home />}/>
+        <Route path='/feedbackforms' element={<FeedbackForms />}/>
         {/* <Route path='/feedback' element={<Feedback />}/> */}
       </Routes>
+        
+      </switch>
     </BrowserRouter>
     </main>
   );

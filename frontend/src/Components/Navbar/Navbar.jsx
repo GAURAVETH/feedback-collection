@@ -13,7 +13,7 @@ const NavLinks = [
   {
     id: 2,
     name: "Feedback",
-    link: "#",
+    link: "/feedbackforms",
   },
   {
     id: 3,

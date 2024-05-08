@@ -16,6 +16,12 @@
   }
 }
 
+.grid {
+  display: grid;
+  place-items: center;
+  height: var(--height); /* This will make the grid take up the full height of the viewport */
+}
+
 .animated-wrapper {
   animation-name: move-wrapper;
   animation-duration: 25s;

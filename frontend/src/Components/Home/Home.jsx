@@ -1,7 +1,10 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
     return (
+        <>
+        <Navbar />
         <div className="flex justify-center items-center height overflow-hidden">
             <div className="max-w-6xl mx-auto my-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -56,6 +59,7 @@ const Home = () => {
              <div className="h-[300px] w-[300px] bg-gradient-to-r from-primary to-secondary rounded-full absolute top-0 left-0 blur-3xl animated-wrapper"></div>
 
         </div>
+        </>
     );
 };
 
