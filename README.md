@@ -27,7 +27,7 @@ To run the React frontend and the server, follow these steps:
 
 =======
 1. Navigate to the server directory:
->>>>>>> 7674baf069641e60212c04828bcc5d739f9de859
+
    ```bash
    cd server
 
