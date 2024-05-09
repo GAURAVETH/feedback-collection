@@ -31,6 +31,14 @@
   position: absolute;
 }
 
+input[type=radio]{
+  display: none;
+}
+
+.star{
+  cursor: pointer;
+}
+
 @keyframes move-wrapper {
   0% {
     transform: translate(150%, 30%) rotate(0) scale(0.8);

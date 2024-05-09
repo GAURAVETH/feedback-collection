@@ -17,11 +17,6 @@ const NavLinks = [
   },
   {
     id: 3,
-    name: "Admin Login",
-    link: "/login",
-  },
-  {
-    id: 4,
     name: "Logout",
     link: "/login",
   },

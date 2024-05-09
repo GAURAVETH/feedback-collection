@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
     return (
-        <>
+        <div className="h-screen">
         <Navbar />
         <div className="flex justify-center items-center height overflow-hidden">
             <div className="max-w-6xl mx-auto my-auto">
@@ -59,7 +59,7 @@ const Home = () => {
              <div className="h-[300px] w-[300px] bg-gradient-to-r from-primary to-secondary rounded-full absolute top-0 left-0 blur-3xl animated-wrapper"></div>
 
         </div>
-        </>
+        </div>
     );
 };
 

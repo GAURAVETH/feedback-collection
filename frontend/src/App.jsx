@@ -8,6 +8,7 @@ import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Login/Login";
 import Home from "./Components/Home/Home";
 import FeedbackForms from "./Components/FeedbackForms/FeedbackForms";
+import ProductReview from "./Components/ProductReview/ProductReview";
 
 
 const App = () => {
@@ -30,7 +31,7 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <BrowserRouter>
-      <switch>
+      {/* <switch> */}
         {/* <Navbar /> */}
       <Routes>
         <Route path='/' element={<Login />}/>
@@ -38,10 +39,10 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/home' element={<Home />}/>
         <Route path='/feedbackforms' element={<FeedbackForms />}/>
-        {/* <Route path='/feedback' element={<Feedback />}/> */}
+        <Route path='/productreview' element={<ProductReview />} />
       </Routes>
         
-      </switch>
+      {/* </switch> */}
     </BrowserRouter>
     </main>
   );
