@@ -5,26 +5,15 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
 const ProductReview = () => {
-<<<<<<< HEAD
     const [productname, setName] = useState('');
     const [productemail, setEmail] = useState('');
     const [productrating, setRating] = useState(0); // Initialize rating state with 0
     const [productfeedback, setFeedback] = useState('');
-=======
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [rating, setRating] = useState(0); // Initialize rating state with 0
-    const [feedback, setFeedback] = useState('');
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-<<<<<<< HEAD
         axios.post("http://localhost:3001/productreview", { productname, productemail, productrating, productfeedback })
-=======
-        axios.post("http://localhost:3001/productreview", { name, email, rating, feedback })
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
             .then(result => {
                 console.log(result);
                 alert("Your feedback was successfully uploaded");
@@ -47,11 +36,7 @@ const ProductReview = () => {
                                 type="text"
                                 id="name"
                                 name="name"
-<<<<<<< HEAD
                                 value={productname}
-=======
-                                value={name}
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
                                 onChange={(e) => setName(e.target.value)}
                                 required
                                 className="w-full border rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
@@ -63,12 +48,8 @@ const ProductReview = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-<<<<<<< HEAD
                                 
                                 value={productemail}
-=======
-                                value={email}
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                                 className="w-full border rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
@@ -76,11 +57,7 @@ const ProductReview = () => {
                         </div>
                         <div>
                             <RatingComponent
-<<<<<<< HEAD
                                 rating={productrating}
-=======
-                                rating={rating}
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
                                 onChange={setRating}
                             />
                         </div>
@@ -90,11 +67,7 @@ const ProductReview = () => {
                             <textarea
                                 id="feedback"
                                 name="feedback"
-<<<<<<< HEAD
                                 value={productfeedback}
-=======
-                                value={feedback}
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
                                 onChange={(e) => setFeedback(e.target.value)}
                                 required
                                 className="w-full border rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"

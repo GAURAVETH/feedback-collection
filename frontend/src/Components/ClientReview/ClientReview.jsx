@@ -80,8 +80,5 @@ const ClientReview = () => {
     );
 };
 
-<<<<<<< HEAD
 export default ClientReview;
-=======
-export default ClientReview;
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
+

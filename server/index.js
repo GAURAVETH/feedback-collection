@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const ClientsModel = require("./model/Clients")
-const ProductUserModel = require("./model/ProductRating")
+const ProductUserModel = require("./model/ProductReview")
 const ClientUserModel = require("./model/ClientReview")
 const WebsiteUserModel = require("./model/WebsiteReview")
 
