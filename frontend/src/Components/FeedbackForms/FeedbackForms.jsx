@@ -16,13 +16,13 @@ const FeedbackLinks = [
     {
         id: 2,
         name: "Client Review",
-        link: "/client-review",
+        link: "/ClientReview",
         image: Image2
     },
     {
         id: 3,
         name: "Website Review",
-        link: "/marketing-review",
+        link: "/marketingreview",
         image: Image3
     }
 ];
