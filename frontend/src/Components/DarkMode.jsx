@@ -13,12 +13,13 @@ const DarkMode = () => {
     localStorage.setItem("theme", theme);
     if (theme === "dark") {
       element.classList.add("dark");
-      element.classList.add("dark");
+      element.classList.remove("light"); // Remove 'light' class
     } else {
-      element.classList.remove("light");
-      element.classList.remove("dark");
+      element.classList.remove("dark"); // Remove 'dark' class
+      element.classList.add("light");
     }
-  });
+  }, [theme]); // Added theme as a dependency
+
   return (
     <>
       {theme === "dark" ? (

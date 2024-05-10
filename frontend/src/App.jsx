@@ -9,6 +9,7 @@ import Login from "./Components/Login/Login";
 import Home from "./Components/Home/Home";
 import FeedbackForms from "./Components/FeedbackForms/FeedbackForms";
 import ProductReview from "./Components/ProductReview/ProductReview";
+import ClientReview from "./Components/ClientReview/ClientReview";
 
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
         <Route path='/home' element={<Home />}/>
         <Route path='/feedbackforms' element={<FeedbackForms />}/>
         <Route path='/productreview' element={<ProductReview />} />
+        <Route path='/clientreview' element={<ClientReview />} />
       </Routes>
         
       {/* </switch> */}

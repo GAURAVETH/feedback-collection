@@ -6,6 +6,6 @@
     password:String
  })
 
- const ClientsModel = mongoose.model("clients", ClientsSchema)
+ const ClientsModel = mongoose.model("Clients-register", ClientsSchema)
  
  module.exports = ClientsModel

@@ -2,14 +2,16 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const ClientsModel = require("./model/Clients")
-const UserModel = require("./model/User")
+const ProductUserModel = require("./model/ProductRating")
+const ClientUserModel = require("./model/ClientReview")
+
 
 const app = express()
 app.use(express.json())
 app.use(cors())
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/client");
+mongoose.connect("mongodb://127.0.0.1:27017/feedback-collection");
 
 app.post("/login", (req, res) => {
     const {email, password} = req.body;
@@ -37,8 +39,15 @@ app.post("/register", (req, res) => {
 
 // Save ProductReview into the Database
 app.post("/ProductReview", (req, res) =>{
-    UserModel.create(req.body)
+    ProductUserModel.create(req.body)
     .then(product => res.status(201).json(product))
+    .catch(err => res.status(400).json(err))
+})
+
+// Save ClientReview into the Database
+app.post("/ClientReview", (req, res) =>{
+    ClientUserModel.create(req.body)
+    .then(client => res.status(201).json(client))
     .catch(err => res.status(400).json(err))
 })
 
