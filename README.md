@@ -21,11 +21,7 @@ To run the React frontend and the server, follow these steps:
    npm run dev
 
 ### Terminal 2 (Server)
-<<<<<<< HEAD
 
-1. Navigate to the server directory:
-
-=======
 1. Navigate to the server directory:
 
    ```bash
