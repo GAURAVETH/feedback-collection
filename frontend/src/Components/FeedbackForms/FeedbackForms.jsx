@@ -16,17 +16,13 @@ const FeedbackLinks = [
     {
         id: 2,
         name: "Client Review",
-<<<<<<< HEAD
         link: "/clientreview",
-=======
-        link: "/ClientReview",
->>>>>>> a1397884208b787b1540cb58b5c4b1881d14b2e9
         image: Image2
     },
     {
         id: 3,
         name: "Website Review",
-        link: "/marketingreview",
+        link: "/websitereview",
         image: Image3
     }
 ];

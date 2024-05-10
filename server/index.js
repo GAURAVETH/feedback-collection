@@ -4,6 +4,7 @@ const cors = require("cors")
 const ClientsModel = require("./model/Clients")
 const ProductUserModel = require("./model/ProductRating")
 const ClientUserModel = require("./model/ClientReview")
+const WebsiteUserModel = require("./model/WebsiteReview")
 
 
 const app = express()
@@ -48,6 +49,13 @@ app.post("/ProductReview", (req, res) =>{
 app.post("/ClientReview", (req, res) =>{
     ClientUserModel.create(req.body)
     .then(client => res.status(201).json(client))
+    .catch(err => res.status(400).json(err))
+})
+
+// Save WebsiteReview into the Database
+app.post("/WebsiteReview", (req, res) =>{
+    WebsiteUserModel.create(req.body)
+    .then(website => res.status(201).json(website))
     .catch(err => res.status(400).json(err))
 })
 
