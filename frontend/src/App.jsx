@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 import AOS from "aos";
@@ -11,6 +11,11 @@ import FeedbackForms from "./Components/FeedbackForms/FeedbackForms";
 import ProductReview from "./Components/ProductReview/ProductReview";
 import ClientReview from "./Components/ClientReview/ClientReview";
 import WebsiteReview from "./Components/WebsiteReview/WebsiteReview";
+import AdminLogin from "./Components/AdminLogin/AdminLogin";
+import AdminSignup from "./Components/AdminSignup/AdminSignup";
+import AdminDashboard from "./Components/AdminDashboard/AdminDashboard";
+import User from "./Components/Feedback/User";
+
 
 
 const App = () => {
@@ -33,21 +38,25 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <BrowserRouter>
-      {/* <switch> */}
+        {/* <switch> */}
         {/* <Navbar /> */}
-      <Routes>
-        <Route path='/' element={<Login />}/>
-        <Route path='/register' element={<Signup/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/home' element={<Home />}/>
-        <Route path='/feedbackforms' element={<FeedbackForms />}/>
-        <Route path='/productreview' element={<ProductReview />} />
-        <Route path='/clientreview' element={<ClientReview />} />
-        <Route path='/websitereview' element={<WebsiteReview />} />
-      </Routes>
-        
-      {/* </switch> */}
-    </BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/register' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/feedbackforms' element={<FeedbackForms />} />
+          <Route path='/productreview' element={<ProductReview />} />
+          <Route path='/clientreview' element={<ClientReview />} />
+          <Route path='/websitereview' element={<WebsiteReview />} />
+          <Route path='/adminlogin' element={<AdminLogin />} />
+          <Route path='/adminsignup' element={<AdminSignup />} />
+          <Route path="/dashboard" element={<AdminDashboard />} />
+          <Route path="/user" element={<User/>}/>
+        </Routes>
+
+        {/* </switch> */}
+      </BrowserRouter>
     </main>
   );
 };
