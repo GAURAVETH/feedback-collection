@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Signup from "./Components/Signup/Signup";
@@ -15,8 +13,9 @@ import AdminLogin from "./Components/AdminLogin/AdminLogin";
 import AdminSignup from "./Components/AdminSignup/AdminSignup";
 import AdminDashboard from "./Components/AdminDashboard/AdminDashboard";
 import User from "./Components/Feedback/User";
-
-
+import Website from "./Components/Feedback/Website";
+import Client from "./Components/Feedback/Client";
+import Product from "./Components/Feedback/Product";
 
 const App = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -38,8 +37,6 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <BrowserRouter>
-        {/* <switch> */}
-        {/* <Navbar /> */}
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/register' element={<Signup />} />
@@ -53,9 +50,10 @@ const App = () => {
           <Route path='/adminsignup' element={<AdminSignup />} />
           <Route path="/dashboard" element={<AdminDashboard />} />
           <Route path="/user" element={<User/>}/>
+          <Route path="/website" element={<Website/>}/>
+          <Route path="/client" element={<Client/>}/>
+          <Route path="/product" element={<Product/>}/>
         </Routes>
-
-        {/* </switch> */}
       </BrowserRouter>
     </main>
   );

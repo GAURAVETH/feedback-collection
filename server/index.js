@@ -106,7 +106,7 @@ app.delete("/clients/:id", async (req, res) => {
 
 
 // Get all product reviews
-app.get("/productReviews", async (req, res) => {
+app.get("/product", async (req, res) => {
     try {
         const productReviews = await ProductUserModel.find();
         res.status(200).json(productReviews);
@@ -116,7 +116,7 @@ app.get("/productReviews", async (req, res) => {
 });
 
 // Get all client reviews
-app.get("/clientReviews", async (req, res) => {
+app.get("/client", async (req, res) => {
     try {
         const clientReviews = await ClientUserModel.find();
         res.status(200).json(clientReviews);
@@ -126,7 +126,7 @@ app.get("/clientReviews", async (req, res) => {
 });
 
 // Get all website reviews
-app.get("/websiteReviews", async (req, res) => {
+app.get("/website", async (req, res) => {
     try {
         const websiteReviews = await WebsiteUserModel.find();
         res.status(200).json(websiteReviews);
